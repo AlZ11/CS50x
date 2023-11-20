@@ -1,0 +1,15 @@
+Times:
+
+10 simulations: 0m0.027s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.033s
+10000 simulations: 0m0.092s
+100000 simulations: 0m0.722s
+1000000 simulations: 0m6.938s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: The time after each simulation is to be expected as following the increase of the number of tournaments so should the time increase as well, which is shown by the results provided
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: After 1000000 simulations the predictions are considered good enough as all of the previous simulations were ran in less than a second compared to the 1000000 simulations which took around 6 seconds.

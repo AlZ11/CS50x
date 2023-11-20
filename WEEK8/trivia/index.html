@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function checkAnswermc(selectedAnswer, buttonId) {
+              var correctAnswer = 'Ronaldo';
+              var selectedButton = document.getElementById(buttonId);
+
+              if (selectedAnswer === correctAnswer) {
+                alert('Correct!');
+                selectedButton.style.backgroundColor = '#a0ffa0';
+              } else {
+                alert('Incorrect.');
+                selectedButton.style.backgroundColor = '#ff7070';
+              }
+                document.getElementById('op1').disabled = true;
+                document.getElementById('op2').disabled = true;
+                document.getElementById('op3').disabled = true;
+                document.getElementById('op4').disabled = true;
+            }
+
+            function checkAnswerfr() {
+                var userAnswer = document.getElementById('userAnswer').value.toLowerCase();
+                var correctAnswer = 'shit';
+                var textbox = document.getElementById('userAnswer');
+
+                if (userAnswer === correctAnswer) {
+                    alert('Correct!');
+                    textbox.style.backgroundColor = '#a0ffa0';
+                } else {
+                    alert('Incorrect.');
+                    textbox.style.backgroundColor = '#ff7070';
+                }
+            }
+          </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <h1 style="text-align: center;">Welcome to my first website (sort of), questions are not hard, just think about it</h1>
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who is the best football player in the world?</h3>
+                <button id='op1' onclick="checkAnswermc('Ronaldo', 'op1')">Ronaldo</button>
+                <button id='op2' onclick="checkAnswermc('Messi', 'op2')">Messi</button>
+                <button id='op3' onclick="checkAnswermc('Lukaku', 'op3')">Lukaku</button>
+                <button id='op4' onclick="checkAnswermc('Neymar', 'op4')">Neymar</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 id="question">What do we think about Tottenham?</h3>
+                <input type="text" id="userAnswer" placeholder="Type your answer here">
+                <button onclick="checkAnswerfr()">Submit Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

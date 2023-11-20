@@ -1,0 +1,16 @@
+body {
+  background-image: url('https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+.list-container {
+  flex: 1; 
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  box-sizing: border-box;
+}

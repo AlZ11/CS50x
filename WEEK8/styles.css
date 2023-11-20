@@ -1,0 +1,17 @@
+
+.centered {
+    text-align: center;
+}
+
+.large {
+    font-size: large;
+}
+
+.medium {
+    font-size: medium;
+}
+
+/* Class tags */
+.small {
+    font-size: small;
+}

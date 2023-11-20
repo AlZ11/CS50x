@@ -1,0 +1,6 @@
+{
+    "gitdoc.enabled": true,
+    "files.associations": {
+        "math.h": "c"
+    }
+}
