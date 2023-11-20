@@ -28,8 +28,6 @@ print_board - Prints a visual representation of the game board to console.
 
 drop_piece - Simulates a player dropping their piece into a column of the game board.
 
-When dropping a piece into the selected column, the player token needs to be placed into the bottom-most empty cell of that column. Like with the real board, a player's token falls down the column and sits on top of any tokens already in that column. This means that the board should be updated if the drop is possible.
-
 execute_player_turn - Prompts the user for a legal move given the game board.
 
 end_of_game - Checks the current state of the game board to see whether the game has ended or not.
